@@ -1,9 +1,8 @@
-package hgfjf;
+package unit1_assesment.hgfjf;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
-import java.util.Arrays;
 
 class Main {
     public static void main(String[] args) {

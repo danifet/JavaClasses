@@ -19,9 +19,12 @@ class Main {
 
         result = Math.abs (sum1-sum2);
 
+        String koko= new String();
+
+
 
 
         // FINAL PRINT
-        System.out.println(Math.abs(result));
+        System.out.println( koko);
     }
 }
