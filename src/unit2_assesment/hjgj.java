@@ -5,26 +5,35 @@ import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
-        int[][] matrix = {{11,7,4},{1,5,7},{10,1,-12}};
-        int result = 0;
-        int sum1=matrix [0][0];
-        int sum2=matrix [0][matrix[0].length-1];
-
-        for (int i=1,k=1;i< matrix.length; i++,k++){
-
-            sum1+= matrix [i][k] ;
-            sum2+= matrix [i][matrix[i].length-1-k];
-
+        //WRITE YOUR CODE HERE
+        Scanner scan = new Scanner(System.in);
+        String item = scan.next();
+        int balance = 100;
+        if(item.equalsIgnoreCase("Blanket")){
+            System.out.println("Thank you for your purchase!\nYour current balance is: "+(balance-60)+"$");
+        }else if(balance>0 && item.equalsIgnoreCase("Charger")){
+            System.out.println("Thank you for your purchase!\nYour current balance is: "+(balance-25)+"$");
+        }else if(balance>0 && item.equalsIgnoreCase("Hat")){
+            System.out.println("Thank you for your purchase!\nYour current balance is: "+(balance-25)+"$");
+        }else if(balance>0 && item.equalsIgnoreCase("Headphones")){
+            System.out.println("Thank you for your purchase!\nYour current balance is: "+(balance-30)+"$");
+        }else if(balance>0 && item.equalsIgnoreCase("Pants")){
+            System.out.println("Thank you for your purchase!\nYour current balance is: "+(balance-50)+"$");
+        }else if(balance>0 && item.equalsIgnoreCase("Pillow")){
+            System.out.println("Thank you for your purchase!\nYour current balance is: "+(balance-40)+"$");
+        }else if(balance>0 && item.equalsIgnoreCase("Socks")){
+            System.out.println("Thank you for your purchase!\nYour current balance is: "+(balance-5)+"$");
+        }else if(balance>0 && item.equalsIgnoreCase("USB cable")){
+            System.out.println("Thank you for your purchase!\nYour current balance is: "+(balance-10)+"$");
+        }else if(item.equalsIgnoreCase("Laptop")){
+            System.out.println("Sorry, not enough funds on your gift card!");
+        }else if(item.equalsIgnoreCase("Smartphone")){
+            System.out.println("Sorry, not enough funds on your gift card!");
+        }else {
+            System.out.println("Invalid item!");
         }
 
-        result = Math.abs (sum1-sum2);
+        System.out.println(item.equalsIgnoreCase("koko loko"));
 
-        String koko= new String();
-
-
-
-
-        // FINAL PRINT
-        System.out.println( koko);
     }
 }

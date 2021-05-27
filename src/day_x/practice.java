@@ -2,16 +2,32 @@ package day_x;
 
 import java.util.Scanner;
 
+
 class Main {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        String email = scan.next();
-        String firstName= email.substring (0, email.indexOf("_"));
-        String lastName= email.substring (email.indexOf("_")+1,email.indexOf("@"));
 
-        System.out.println (lastName+"_"+firstName);
-            System.out.println (email.substring(email.indexOf ("@")));
+    public static boolean isPalindrome(String check) {
+
+        // your code here
+        boolean bool= false;
+        check= check.replace (" ","").toLowerCase();
+        for (int i=0; i<check.length()/2;i++){
+            if (check.charAt(i)==check.charAt(check.length() -1-i)){
+                bool=true;
+            } else {
+                bool=false;
+                break;
+            }
         }
-
+        return bool;
 
     }
+
+
+    // Do not touch below
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println(isPalindrome(in.nextLine()));
+    }
+
+}

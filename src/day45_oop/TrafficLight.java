@@ -6,7 +6,8 @@ public class TrafficLight {
 
         //this is read only method, displays value of color variable
             public void showColor() {
-            System.out.println("current color = " + color);
+
+                System.out.println("current color = " + color);
         }
 
         //this method updates the value of color variable

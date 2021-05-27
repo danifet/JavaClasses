@@ -6,10 +6,12 @@ public class CheckingAccount {
     private long accountNumber;
 
     public int getBalance() {
+
         return balance;
     }
 
     public void setBalance(int balance) {
+
         this.balance = balance;
     }
 
@@ -18,14 +20,17 @@ public class CheckingAccount {
     }
 
     public void setAccountNumber(long accountNumber) {
+
         this.accountNumber = accountNumber;
     }
 
     public String getAccountHolder() {
+
         return accountHolder;
     }
 
     public void setAccountHolder(String accountHolder) {
+
         this.accountHolder = accountHolder;
     }
 

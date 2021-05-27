@@ -4,5 +4,6 @@ public class Dealership {
     public static void main(String[] args) {
         Car car1 = new Car();
         car1.setModel("Nissan Altima");
+       System.out.println(car1.getModel());
     }
 }
