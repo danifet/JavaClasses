@@ -16,7 +16,10 @@ public Address() {
 }
 
     public Address(String s, String fggdgf, String s1) {
-
+    setStreet(s);
+    setZipCode(s1);
+    setCity(fggdgf);
+        System.out.println(toString());
     }
 
 
