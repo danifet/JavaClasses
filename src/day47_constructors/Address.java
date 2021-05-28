@@ -7,6 +7,18 @@ private String state;
 private String zipCode;
 private String country="USA";
 
+public Address() {
+    System.out.println("Address constructor");
+    street = "123 unknown st";
+    city = "Java";
+    state = "WS";
+    zipCode = "00000";
+}
+
+    public Address(String s, String fggdgf, String s1) {
+
+    }
+
 
     public String toString() {
         return street + ", " + city + ", " + state + ", " + zipCode+ ", " + country;
