@@ -5,18 +5,16 @@ public class Person {
     int age;
 
     public void walk(){
+        System.out.println("Person is walking");
+    }
+
+    public void talk(){
+        System.out.println("Person is talking");
 
     }
 
-    public void walk(){
-
+    public void work(String job){
+        System.out.println("Person is working as " + job);
     }
 
-    public void walk(){
-
-    }
-
-    public void walk(){
-
-    }
-}
+   }
