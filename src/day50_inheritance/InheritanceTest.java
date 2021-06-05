@@ -17,6 +17,12 @@ public class InheritanceTest {
         t1.age = 25;
 
         t1.talk();
+        t1.walk();
+        t1.teach("JAVA");
 
+        Student s1 = new Student();
+        s1.name = "Dan";
+        s1.schoolName = "Cybertek";
+        s1.study("Algebra");
     }
 }
